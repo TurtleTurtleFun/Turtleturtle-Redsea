@@ -26,7 +26,7 @@
         time. This left side pattern is different to the right side one but
         there are still enough similarities to allow you to match turtles from
         opposite profiles. Yet, this is considered a much more difficult task
-        than matching turtles from photos that show the same profile! Sometime
+        than matching turtles from photos that show the same profile! Sometimes
         the photos are not very clear which also makes the matching difficult!
     </p>
     <p>
