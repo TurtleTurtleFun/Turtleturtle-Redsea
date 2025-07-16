@@ -14,7 +14,7 @@
     <ul>
         <li>
             Our sea turtle photo-database from Zakynthos Island, where all the
-            photos are taken, spans 25 years, and it is one of the oldest (if
+            photos are taken, spans 25 years, and is one of the oldest (if
             not the oldest) sea turtle photo-database of this kind worldwide. It
             has supported many studies, from <a
                 href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3027"
