@@ -27,5 +27,3 @@ vite.config.ts.timestamp-*
 /utils/Archive/*
 /utils/Archive/data
 /utils/Archive
-/src/lib/gameData/*
-/src/lib/SVG/*
