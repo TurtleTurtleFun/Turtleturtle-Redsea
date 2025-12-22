@@ -3,6 +3,7 @@
     import Background from '$lib/comps/background.svelte'
     import Title from '$lib/comps/utils/title.svelte'
     import '$lib/scss/global.scss'
+
     import favicon from '$lib/svg/favicon.svg'
     import { animationTime, cheat, currentGame, playerId } from '$lib/store'
     import { customAlphabet } from 'nanoid'
