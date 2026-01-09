@@ -17,18 +17,22 @@ const weights = {
     date: 1,
     orientation: 2,
     clarity: 1,
+    species: 10,
 }
 
 // diffculty thresholds
 const scoreThresholds = {
     easy: 0,
-    med: 4.5,
-    hard: 7,
+    med: 7,
+    hard: 9,
     vHard: 11,
 }
 
+const idSerperator = '~'
+
 // Set up pocketbase instance (See env)
 const pb = new PocketBase(Deno.env.get('POCKET_URL'))
+let count = 0
 
 // Login into Pocketbase (See env)
 const authData = await pb
@@ -37,6 +41,16 @@ const authData = await pb
         Deno.env.get('POCKET_USER') || 'test',
         Deno.env.get('POCKET_PASS') || 'test'
     )
+
+const idParser = (string: string) => {
+    return string
+        .replaceAll('.jpg', '')
+        .replaceAll('.jpeg', '')
+        .replaceAll('.webp', '')
+        .replaceAll('_', '')
+        .replaceAll('-', '')
+        .toLowerCase()
+}
 
 // This Function uploads all turtle to the pocketbase
 const uploadTurtles = async (location: string) => {
@@ -94,9 +108,11 @@ const uploadTurtles = async (location: string) => {
 
     // construct data to upload for each csv entry
     for (let x = 0; x < data.length; x++) {
+        console.log('TURTLE UPLOAD: ', x, '/', data.length)
+
         const file = {
             id: data[x].id,
-            story: [] as string[],
+            stories: [] as string[],
             name: data[x].name,
             hero: [] as Blob[],
         }
@@ -122,7 +138,7 @@ const uploadTurtles = async (location: string) => {
         // checks if there are stories  to upload
         for (const storyItem of storyArray) {
             if (storyItem.id.includes(file.id)) {
-                file.story = storyItem.stories
+                file.stories = storyItem.stories
             }
         }
 
@@ -166,6 +182,8 @@ const uploadPictures = async (location: string) => {
 
     // Loop over data
     for (let x = 0; x < data.length; x++) {
+        console.log('IMAGE UPLOAD: ', x, '/', data.length)
+
         const thisData = data[x]
         try {
             const imageData = await Deno.readFile(
@@ -173,7 +191,7 @@ const uploadPictures = async (location: string) => {
             )
             const blob = new Blob([imageData])
             var regex = new RegExp(/^[a-z0-9]+$/)
-            let oldId = thisData.path.replace('.jpg', '').replace('.jpeg', '')
+            let oldId = idParser(thisData.path)
             let id = undefined
             if (regex.test(oldId)) {
                 id = oldId
@@ -214,7 +232,7 @@ const uploadPictures = async (location: string) => {
 
 const uploadNewData = async () => {
     // EDIT THIS Location to your data in Archive
-    const folder = 'Archive/new'
+    const folder = 'ArchiveSea/data'
     // Folder Layout
     // - Folder Name
     //      - metadata.csv
@@ -243,7 +261,7 @@ const genHash = (ids: string[]) => {
     for (let x = 0; x < ids.length; x++) {
         string += ids[x]
         if (x < ids.length - 1) {
-            string += '-'
+            string += idSerperator
         }
     }
 
@@ -260,13 +278,28 @@ const generateScore = (imageA: ImageType, imageB: ImageType) => {
     // Date score
     let dateScore = 0
 
-    const dateDiffernce = Math.abs(
-        moment(imageA.taken, 'YYYY-MM-DD').diff(
-            moment(imageB.taken, 'YYYY-MM-DD'),
-            'day',
-            true
-        )
-    )
+    let dateDiffernce = 0
+
+    // work around for no date
+    if (imageA.taken && imageB.taken) {
+        if (imageA.taken.length == 10 && imageB.taken.length == 10) {
+            dateDiffernce = Math.abs(
+                moment(imageA.taken, 'YYYY-MM-DD').diff(
+                    moment(imageB.taken, 'YYYY-MM-DD'),
+                    'day',
+                    true
+                )
+            )
+        } else {
+            if (imageA.taken == imageB.taken) {
+                dateDiffernce = 0
+            } else {
+                dateDiffernce = 30
+            }
+        }
+    } else {
+        dateDiffernce = 30
+    }
 
     if (dateDiffernce == 0) {
         // Same day
@@ -307,6 +340,11 @@ const generateScore = (imageA: ImageType, imageB: ImageType) => {
         orientationScore++
     }
 
+    let speciesScore = 0
+    if (imageA.species == 'EI' || imageB.species == 'EI') {
+        speciesScore = 1
+    }
+
     // Clarity Score
     const clarityScore = (imageA.clarity + imageB.clarity) / 2
 
@@ -314,7 +352,8 @@ const generateScore = (imageA: ImageType, imageB: ImageType) => {
     return (
         dateScore * weights.date +
         orientationScore * weights.orientation +
-        clarityScore * weights.clarity
+        clarityScore * weights.clarity +
+        speciesScore * weights.species
     )
 }
 
@@ -340,14 +379,17 @@ const generatePairs = async () => {
     }
 
     // Grab image data
-    let allImageData = parse(await Deno.readTextFile('Archive/metadata.csv'), {
-        skipFirstRow: true,
-        strip: true,
-    })
+    let allImageData = parse(
+        await Deno.readTextFile('ArchiveSea/data/metadata.csv'),
+        {
+            skipFirstRow: true,
+            strip: true,
+        }
+    )
 
     // Grab turtle data
     const allTurtleData = parse(
-        await Deno.readTextFile('Archive/Ids-Names.csv'),
+        await Deno.readTextFile('ArchiveSea/data/idNames.csv'),
         {
             columns: ['id', 'name'],
         }
@@ -355,7 +397,7 @@ const generatePairs = async () => {
 
     const parsedAllImageData: ImageType[] = allImageData.map((image) => {
         let imageObj = {
-            id: image.path.replace('.jpg', '').replace('.jpeg', ''),
+            id: idParser(image.path),
             turtle: image.identity,
             image_id: parseInt(image.image_id),
             taken: image.date,
@@ -364,6 +406,7 @@ const generatePairs = async () => {
             width: parseInt(image.width),
             height: parseInt(image.height),
             image: image.path,
+            species: image.Species ? image.Species : undefined,
             name: allTurtleData.find((turtle) => {
                 return turtle.id == image.identity
             })?.name,
@@ -461,7 +504,7 @@ const checkDups = (game: GameType) => {
     const randomTurtle = game.random.turtle
 
     const otherIds = game.pairs.map((thisPair: Pair) => {
-        return thisPair.id.split('-')
+        return thisPair.id.split(idSerperator)
     })
     const otherTurtles = game.pairs.map((thisPair: Pair) => {
         return thisPair.images[0].turtle
@@ -568,7 +611,7 @@ const generateGames = async () => {
         // If game passes check, add it to Array
         if (game.pairs.length == 4 && checkDups(game)) {
             game.ids = checkDups(game) as string[]
-            game.id = game.ids.join('-')
+            game.id = game.ids.join(idSerperator)
             games.push(game)
             x++
         }
@@ -649,7 +692,7 @@ const generateGames = async () => {
             // If game passes check, add it to Array
             if (game.pairs.length == 4 && checkDups(game)) {
                 game.ids = checkDups(game) as string[]
-                game.id = game.ids.join('-')
+                game.id = game.ids.join(idSerperator)
                 specGames[difficultyLevel].push(game)
                 // console.log(
                 //     difficultyLevel,
@@ -726,6 +769,8 @@ const turtleUpdate = async () => {
 }
 
 if (import.meta.main) {
+    await uploadNewData()
+
     // // upload turtle info
     // await uploadTurtles()
 
@@ -733,13 +778,11 @@ if (import.meta.main) {
     // await uploadPictures()
 
     // // make Pairs (takes along time...)
-    // await generatePairs()
+    await generatePairs()
 
     // // make a set of games from the pairs
-    // await generateGames()
+    await generateGames()
 
     // //updat turtles with stories
     // await turtleUpdate()
-
-    await uploadNewData()
 }

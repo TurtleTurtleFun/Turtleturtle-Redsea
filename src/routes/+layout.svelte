@@ -3,7 +3,8 @@
     import Background from '$lib/comps/background.svelte'
     import Title from '$lib/comps/utils/title.svelte'
     import '$lib/scss/global.scss'
-    import favicon from '$lib/SVG/favicon_1.svg'
+
+    import favicon from '$lib/SVG/favicon_3.svg'
     import { animationTime, cheat, currentGame, playerId } from '$lib/store'
     import { customAlphabet } from 'nanoid'
     let { children } = $props()
@@ -71,6 +72,7 @@
 <svelte:head>
     <link rel="icon" href={favicon} />
 </svelte:head>
+
 <svelte:window onkeydown={(event) => handleKeyDown(event)} />
 <Background {home}></Background>
 

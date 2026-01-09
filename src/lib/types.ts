@@ -14,6 +14,7 @@ export type ImageType = {
     height: number
     image: string
     name: string | undefined
+    species?: string | undefined
 }
 
 // Pair Type
