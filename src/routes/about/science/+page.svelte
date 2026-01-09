@@ -2,7 +2,6 @@
     import Button from '$lib/comps/utils/Button.svelte'
     import ButtonBox from '$lib/comps/utils/buttonBox.svelte'
     import Splash from '$lib/comps/utils/Splash.svelte'
-
 </script>
 
 <Splash>
@@ -14,9 +13,9 @@
     <ul>
         <li>
             Our sea turtle photo-database from Zakynthos Island, where all the
-            photos are taken, spans 25 years, and is one of the oldest (if
-            not the oldest) sea turtle photo-database of this kind worldwide. It
-            has supported many studies, from <a
+            photos are taken, spans 25 years, and is one of the oldest (if not
+            the oldest) sea turtle photo-database of this kind worldwide. It has
+            supported many studies, from <a
                 href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3027"
                 target="_blank">estimating survival rates</a
             >,
@@ -93,7 +92,8 @@
     <Button url="/" style="orange">Home</Button>
     <Button url="/about">About</Button>
     <Button url="/about/credits">Credits</Button>
+    <Button url="https://www.turtleturtle.fun">Zakynthos Edition</Button>
     <Button url="mailto:k.papafitsoros@qmul.ac.uk?subject=TurtleTurtle"
-    >Contact</Button
->
+        >Contact</Button
+    >
 </ButtonBox>

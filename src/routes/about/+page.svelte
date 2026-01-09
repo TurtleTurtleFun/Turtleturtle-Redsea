@@ -38,10 +38,12 @@
     <p>
         All the turtle photos in the game are from the loggerhead sea turtle
         population of Zakynthos Island, Greece. This is one of the most
-        important and best studied sea turtle populations in the Mediterranean. 
-	You can get involved in sea turtle conservation there by volunteering with 
-	<a href="https://archelon.gr"
-            >ARCHELON, the Sea Turtle Protection Society of Greece</a>.
+        important and best studied sea turtle populations in the Mediterranean.
+        You can get involved in sea turtle conservation there by volunteering
+        with
+        <a href="https://archelon.gr"
+            >ARCHELON, the Sea Turtle Protection Society of Greece</a
+        >.
     </p>
     <p>
         Did you see a sea turtle in Zakynthos and want to learn more about its
@@ -64,6 +66,7 @@
     <Button url="/" style="orange">Home</Button>
     <Button url="/about/credits">Credits</Button>
     <Button url="/about/science">Science</Button>
+    <Button url="https://www.turtleturtle.fun">Zakynthos Edition</Button>
     <Button url="mailto:k.papafitsoros@qmul.ac.uk?subject=TurtleTurtle"
         >Contact</Button
     >
