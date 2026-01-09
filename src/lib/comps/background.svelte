@@ -16,7 +16,7 @@
 
 <style lang="scss">
     .background {
-        background-color: #b7e1e6;
+        background-color: #b7e6dd;
         width: 100dvw;
         max-height: 100dvh;
         position: fixed;
