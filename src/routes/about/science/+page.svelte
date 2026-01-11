@@ -11,79 +11,28 @@
     </p>
     <ul>
         <li>
-            Our sea turtle photo-database from Zakynthos Island, where all the
-            photos are taken, spans 25 years, and is one of the oldest (if not
-            the oldest) sea turtle photo-database of this kind worldwide. It has
-            supported many studies, from <a
-                href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3027"
-                target="_blank">estimating survival rates</a
-            >,
-            <a
-                href="https://www.int-res.com/abstracts/meps/v575/meps12193"
-                target="_blank"
-                >studying in-water sea turtle behaviour in cleaning stations</a
-            >, and
-            <a
-                href="https://www.sciencedirect.com/science/article/pii/S0003347222001312"
-                target="_blank">aggressive interactions in foraging grounds</a
-            >, to
-            <a
-                href="https://zslpublications.onlinelibrary.wiley.com/doi/full/10.1111/acv.12656"
-                target="_blank">quantifying ecotouristic pressure</a
-            >
-            and
-            <a
-                href="https://www.sciencedirect.com/science/article/pii/S0304380022003210"
-                target="_blank">measure its evolution over time</a
-            >.
+		All the turtle photos used in the game come from TurtleWatch Egypt 2.0 ’s 		long-term photo-identification database including more than 11000 turtle 		sightings and a catalogue of almost 1000 individual turtles, which has been 		built since 2011- at that time under the umbrella of the Hurghada 			Environmental Protection and Conservation Association - through the help of 		tourists, divers, dive centers, and local communities. This citizen science 		approach has proven to be a
+		 <a href="https://doi.org/10.1007/978-3-319-99417-8_28">powerful tool for 		monitoring marine megafauna in the Red Sea<\a> and improving our			understanding of sea turtle populations and their conservation needs.
         </li>
         <li>
-            We are developing state-of-the-art automated photo-ID methods (<a
-                href="https://openaccess.thecvf.com/content/WACV2024/html/Cermak_WildlifeDatasets_An_Open-Source_Toolkit_for_Animal_Re-Identification_WACV_2024_paper.html"
-                target="_blank">MegaDescriptor</a
-            >). We have also developed the
-            <a
-                href="https://wildlifedatasets.github.io/wildlife-datasets"
-                target="_blank">WildlifeDatasets</a
-            > library which is a constantly updated library providing easy access
-            to multi-species photo-databases for algorithmic training and testing.
+		The game is built around photo-identification (photo-ID), a non-invasive 		technique widely used by researchers to identify animals to the individual 		levels using the natural markers on their bodies. Each sea turtle has a 		unique pattern of facial scales that remains unchanged over time, allowing 		individuals to be recognised across years. By applying photo-ID, TurtleWatch 		2.0 team have been able to monitor turtles at feeding grounds, study site 		fidelity, assess population connectivity, and understand how turtles use 		different areas of the Red Sea, see <a href="https://www.academia.edu/39876895/African_Sea_Turtle_Newsletter">this publication<\a>.
         </li>
         <li>
-            Our published dataset <a
-                href="https://openaccess.thecvf.com/content/WACV2024/html/Adam_SeaTurtleID2022_A_Long-Span_Dataset_for_Reliable_Sea_Turtle_Re-Identification_WACV_2024_paper.html"
-                target="_blank">SeaTurtleID2022</a
-            >, on which this game is largely based on, is the first public
-            large-scale, long-span dataset with sea turtle photographs captured
-            in the wild (Zakynthos Island). It contains 8729 photographs of 438
-            unique individuals collected within 13 years, making it the
-            longest-spanned dataset for animal re-identification.
+		Photo-ID data from the Red Sea have also shown that turtles photographed in 		Egyptian feeding areas are <a href="https://iotn.org/iotn38-02-combined-photo-identification-and-flipper-tagging-of-green-turtles-identify-connections-between-egyptian-red-sea-feeding-areas-and-a-key-nesting-area-in-saudi-arabia/">connected to important nesting sites<\a> in Saudi Arabia, highlighting how conservation efforts must consider movements across national boundaries.
         </li>
         <li>
-            Recently, we conducted a <a
-                href="https://www.sciencedirect.com/science/article/pii/S1574954125001670"
-                target="_blank">breakthrough study</a
-            > in sea turtle Photo-ID: We quantified for the first time the inherent
-            similarity between the left and the right facial profiles in three sea
-            turtle species. In particular we showed that the similarity of the left
-            and right profiles of the same individuals is higher than those of different
-            individuals. This similarity can be detected and quantified by state-of-the-art
-            artificial intelligence-based photo-ID methods, including MegaDescriptor.
-            As a result one can now match opposite profile photos of the same individual
-            which was so far not possible with the current sea turtle photo-ID practices,
-            either manual or automatic. This also leads to increased photo-ID accuracies
-            and flexibility in photo-ID data collection protocols as very often in
-            practice only a single facial profile is available. Can you also match
-            opposite profiles of the same individuals? Try it on the high difficulty
-            levels of our game!
+		Another important way photo-ID is used by the TurtleWatch Egypt 2.0 team is 		to <a href="https://doi.org/10.2744/CCB-1665.1">track injuries and recovery in individual turtles<\a>. By repeatedly identifying the same individuals over time, researchers can assess how often turtles are injured by human activities and whether and how they are able to recover, providing key information for conservation and management in the Red Sea.
         </li>
         <li>
-            Finally, we have published some general <a
-                href="https://www.researchgate.net/profile/Kostas-Papafitsoros/publication/388909753_Sea_Turtle_Photo_Identification_A_Practical_Guide/links/67ac5e81645ef274a47b0593/Sea-Turtle-Photo-Identification-A-Practical-Guide.pdf"
-                target="_blank">practical guidelines for sea turtle photo-ID</a
-            > as part of the upcoming Manual on “Research and Management Techniques
-            for the Conservation of Sea Turtles”, by the&nbsp;IUCN/SSC Marine Turtle
-            Specialist Group.
+		These findings contribute to the broader scientific knowledge of sea turtles 		in the region, including <a href="https://link.springer.com/chapter/10.1007/978-3-662-45201-1_31">species distribution, ecology, and threats in the 		Red Sea<\a>.
         </li>
+	<li>
+		The matching challenges in TurtleTurtle-RedSea reflect the same principles used by scientists and are aligned with <a href="https://www.researchgate.net/profile/Kostas-Papafitsoros/publication/388909753_Sea_Turtle_Photo_Identification_A_Practical_Guide/links/67ac5e81645ef274a47b0593/Sea-Turtle-Photo-Identification-A-Practical-Guide.pdf">best practices in sea turtle photo-identification<\a>.
+	</li>
+	<li>
+	Difficulty levels in the game are based on image quality, head orientation, and species-specific characteristics. Green turtles generally have facial profiles that are easier to match, while hawksbill turtles show lower variability, making identification more challenging. This variability is deliberately included in the game to reflect real-world research conditions.<\br>
+By playing TurtleTurtle-RedSea, you are learning the same skills scientists use to study and protect sea turtles in the wild, and helping spread awareness about their conservation in the Red Sea.
+	</li>		
     </ul>
     <p><br /></p>
 </Splash>
