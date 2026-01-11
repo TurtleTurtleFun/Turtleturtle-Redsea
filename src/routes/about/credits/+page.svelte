@@ -32,7 +32,7 @@
     <Button url="/about">About</Button>
     <Button url="/about/science">Science</Button>
     <Button url="https://www.turtleturtle.fun">Zakynthos Edition</Button>
-    <Button url="mailto:k.papafitsoros@qmul.ac.uk?subject=TurtleTurtle"
+    <Button url="mailto:turtlewatchegypt@gmail.com?subject=TurtleTurtle"
         >Contact</Button
     ></ButtonBox
 >
