@@ -7,8 +7,7 @@
 <Splash>
     <h2>The Science</h2>
     <p>
-        There are plenty of published scientific works as well as sea turtle
-        conservation efforts associated with the game:
+        TurtleTurtle-RedSea is based on real scientific research and long-term conservation 	work carried out in the Egyptian Red Sea.
     </p>
     <ul>
         <li>
