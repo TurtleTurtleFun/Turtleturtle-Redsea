@@ -12,10 +12,9 @@
 <Splash>
     <h2>Credits</h2>
     <p>
-        This project was funded by a Queen Mary University of London Public
-        Engagement Grant awarded to <a
+        This project builds upon the original <a href="https://www.turtleturtle.fun/">TurtleTurtle</a> game which was funded by a Queen Mary University of London Public Engagement Grant awarded to <a
             href="https://kostaspapafitsoros.weebly.com/">Kostas Papafitsoros</a
-        >.
+        >. The TurtleTurtle-RedSea version was developed with support from an <a href="https://www.internationalseaturtlesociety.org/">ISTS</a> Innovation Grant awarded to Micol Montagna and Kostas Papafitsoros.
     </p>
 
     <p>
