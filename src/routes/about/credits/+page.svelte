@@ -23,7 +23,7 @@
             >Fred Wordie</a
         >
     </p>
-    <p>Further data support by: Lukáš Adam, Galini Samlidou</p>
+    <p>Further data support by: Valeria Roma, Lukáš Adam</p>
     <Board>
         <img src={logo} alt="" />
     </Board>
