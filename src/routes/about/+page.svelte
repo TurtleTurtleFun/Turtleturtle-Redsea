@@ -14,10 +14,9 @@
     </p>
     <p>
         You can play endlessly trying to match sea turtle faces and in the same
-        time learn facts about their lives! Some of the turtles in the game have
-        stories that go back more than 3 decades ago! When you play, these
-        stories and facts along with a photo of the turtle you match appear in a
-        pop-up window.
+        time learn facts about their lives! All the green and hawksbill turtles featured 	in the game have been monitored for years through 
+	<a href="https://www.turtlewatchegypt.net">TurtleWatch Egypt 2.0’s</a> 
+	long-term research and citizen science program. When you successfully match a 		turtle, a pop-up window appears showing its story, biological information, and		conservation facts from the Red Sea.
     </p>
     <p>
         Your task is to match turtles using photo-identification (photo-ID):
