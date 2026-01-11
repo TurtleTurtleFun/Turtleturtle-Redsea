@@ -10,8 +10,7 @@
 <Splash>
     <h2>About</h2>
     <p>
-        TurtleTurtle is the first of its kind interactive sea turtle photo-ID
-        game!
+        TurtleTurtle-RedSea is an interactive sea turtle photo-identification game that 	allows you to learn about the sea turtles of the Egyptian Red Sea while having 		fun matching their faces.
     </p>
     <p>
         You can play endlessly trying to match sea turtle faces and in the same
@@ -67,7 +66,7 @@
     <Button url="/about/credits">Credits</Button>
     <Button url="/about/science">Science</Button>
     <Button url="https://www.turtleturtle.fun">Zakynthos Edition</Button>
-    <Button url="mailto:k.papafitsoros@qmul.ac.uk?subject=TurtleTurtle"
+    <Button url="mailto:turtlewatchegypt@gmail.com?subject=TurtleTurtle"
         >Contact</Button
     >
 </ButtonBox>
