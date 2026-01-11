@@ -19,36 +19,23 @@
 	long-term research and citizen science program. When you successfully match a 		turtle, a pop-up window appears showing its story, biological information, and		conservation facts from the Red Sea.
     </p>
     <p>
-        Your task is to match turtles using photo-identification (photo-ID):
-        Every turtle has a unique pattern of scales that does not change in
-        time. This left side pattern is different to the right side one but
-        there are still enough similarities to allow you to match turtles from
-        opposite profiles. Yet, this is considered a much more difficult task
-        than matching turtles from photos that show the same profile! Sometimes
-        the photos are not very clear which also makes the matching difficult!
+        Your task is to match turtles using photo-identification (photo-ID), a 			scientific method widely used in sea turtle research. Each turtle has a unique 		pattern of facial scales that does not change over time. The pattern on the left 	side of the face is different from the right side, but there are enough 		similarities to allow matching turtles from opposite profiles. This is much more 	challenging than matching photos showing the same side, especially when images		are unclear or taken from different angles.
     </p>
     <p>
-        There are 4 difficulty levels depending on the quality of the images and
-        the head orientations: Easy, Medium, Hard and Expert. AI algorithms can
-        also do this matching task but they may struggle with low photo quality
-        and different orientations. Can you beat them?
+        There are four difficulty levels (Easy, Medium, Hard, and Expert) based on image 	quality, head orientation, and species. Green turtle facial patterns are 		generally easier to match, while hawksbill turtles often present more 			difficulties, making identification more challenging. Artificial intelligence 		algorithms can also perform this task, but they often struggle with low-quality 	images, different orientations, and species-specific variability. Can you do 		better?
     </p>
     <p>
-        All the turtle photos in the game are from the loggerhead sea turtle
-        population of Zakynthos Island, Greece. This is one of the most
-        important and best studied sea turtle populations in the Mediterranean.
-        You can get involved in sea turtle conservation there by volunteering
-        with
-        <a href="https://archelon.gr"
-            >ARCHELON, the Sea Turtle Protection Society of Greece</a
-        >.
+	All turtle photos in the game come from TurtleWatch Egypt 2.0’s photo-ID 		database, built since 2011 with contributions from tourists, divers, local 		communities and organizations, and researchers. The game is based on the 		original <a href="turtleturtle.fun">TurtleTurtle</a> concept originally created 	for the sea turtles of Zakynthos Island, Greece, with support from Queen Mary 		University of London. The Red Sea version was adapted and developed by the 		original TurtleTurtle with funding provided by an 
+	<a href="https://www.internationalseaturtlesociety.org/">International Sea 		Turtle Society</a> Innovation Grant.
     </p>
     <p>
-        Did you see a sea turtle in Zakynthos and want to learn more about its
-        story? You can submit its photo <a href="https://zakynthosturtles.org"
+	You can get involved in sea turtle conservation in the Red Sea by sharing your 		sightings with, volunteering for, or <a href="https://turtlewatchegypt.net/support-us/">supporting TurtleWatch Egypt 2.0</a>.
+    </p>	
+    <p>
+        Did you see a sea turtle in the Red Sea  and want to learn more about its
+        story? You can submit your photo or video <a href="https://turtlewatchegypt.net/share-marine-turtles-photos/"
             >here</a
-        > and you will immediately receive all the information we know about it via
-        an email!
+        >. By doing so, you will contribute to sea turtle conservation in the Red Sea, 		helping improve scientific knowledge. The TurtleWatch Egypt 2.0 team will share 	with you the results of your sighting once the identification process is 		complete.
     </p>
     <p>
         Do you have your own sea turtle photo-ID project and you would like to
@@ -65,7 +52,7 @@
     <Button url="/about/credits">Credits</Button>
     <Button url="/about/science">Science</Button>
     <Button url="https://www.turtleturtle.fun">Zakynthos Edition</Button>
-    <Button url="mailto:turtlewatchegypt@gmail.com?subject=TurtleTurtle"
+    <Button url="mailto:turtlewatchegypt@gmail.com?subject=TurtleTurtle-RedSea"
         >Contact</Button
     >
 </ButtonBox>
