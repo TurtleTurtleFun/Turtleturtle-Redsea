@@ -3,7 +3,7 @@
     import ButtonBox from '$lib/comps/utils/buttonBox.svelte'
     import Splash from '$lib/comps/utils/Splash.svelte'
     import type { PageData } from './$types'
-    import logo from '$lib/imgs/QM_CPE_Logo_landscape_-_blue-removebg-preview.png'
+    import logo from '$lib/imgs/QMplusISTS_CPE_Logo_landscape_-_blue-removebg-preview.png'
     import Board from '$lib/comps/utils/board.svelte'
 
     let { data }: { data: PageData } = $props()
