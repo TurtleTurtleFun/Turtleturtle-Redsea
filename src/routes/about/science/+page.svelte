@@ -30,7 +30,7 @@
 		The matching challenges in TurtleTurtle-RedSea reflect the same principles used by scientists and are aligned with <a href="https://www.researchgate.net/profile/Kostas-Papafitsoros/publication/388909753_Sea_Turtle_Photo_Identification_A_Practical_Guide/links/67ac5e81645ef274a47b0593/Sea-Turtle-Photo-Identification-A-Practical-Guide.pdf">best practices in sea turtle photo-identification</a>.
 	</li>
 	<li>
-	Difficulty levels in the game are based on image quality, head orientation, and species-specific characteristics. Green turtles generally have facial profiles that are easier to match, while hawksbill turtles show lower variability, making identification more challenging. This variability is deliberately included in the game to reflect real-world research conditions.<\br>
+	Difficulty levels in the game are based on image quality, head orientation, and species-specific characteristics. Green turtles generally have facial profiles that are easier to match, while hawksbill turtles show lower variability, making identification more challenging. This variability is deliberately included in the game to reflect real-world research conditions.<br>
 By playing TurtleTurtle-RedSea, you are learning the same skills scientists use to study and protect sea turtles in the wild, and helping spread awareness about their conservation in the Red Sea.
 	</li>
     </ul>
