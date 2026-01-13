@@ -12,7 +12,7 @@
     <ul>
         <li>
 		All the turtle photos used in the game come from TurtleWatch Egypt 2.0 ’s 		long-term photo-identification database including more than 11000 turtle 		sightings and a catalogue of almost 1000 individual turtles, which has been 		built since 2011- at that time under the umbrella of the Hurghada 			Environmental Protection and Conservation Association - through the help of 		tourists, divers, dive centers, and local communities. This citizen science 		approach has proven to be a
-		 <a href="https://doi.org/10.1007/978-3-319-99417-8_28">powerful tool for 		monitoring marine megafauna in the Red Sea<\a> and improving our			understanding of sea turtle populations and their conservation needs.
+		 <a href="https://doi.org/10.1007/978-3-319-99417-8_28">powerful tool for 		monitoring marine megafauna in the Red Sea </a> and improving our			understanding of sea turtle populations and their conservation needs.
         </li>
         <li>
 		The game is built around photo-identification (photo-ID), a non-invasive 		technique widely used by researchers to identify animals to the individual 		levels using the natural markers on their bodies. Each sea turtle has a 		unique pattern of facial scales that remains unchanged over time, allowing 		individuals to be recognised across years. By applying photo-ID, TurtleWatch 		2.0 team have been able to monitor turtles at feeding grounds, study site 		fidelity, assess population connectivity, and understand how turtles use 		different areas of the Red Sea, see <a href="https://www.academia.edu/39876895/African_Sea_Turtle_Newsletter">this publication<\a>.
@@ -32,7 +32,7 @@
 	<li>
 	Difficulty levels in the game are based on image quality, head orientation, and species-specific characteristics. Green turtles generally have facial profiles that are easier to match, while hawksbill turtles show lower variability, making identification more challenging. This variability is deliberately included in the game to reflect real-world research conditions.<\br>
 By playing TurtleTurtle-RedSea, you are learning the same skills scientists use to study and protect sea turtles in the wild, and helping spread awareness about their conservation in the Red Sea.
-	</li>		
+	</li>
     </ul>
     <p><br /></p>
 </Splash>
