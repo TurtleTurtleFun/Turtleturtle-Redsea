@@ -17,7 +17,6 @@
             opacity: 0,
             start: 1.5,
         }}
-        out:fade|global={{ duration: $animationTime / 2 }}
     >
         {@render children()}
     </div>
