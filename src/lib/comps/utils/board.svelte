@@ -12,12 +12,12 @@
         class="board"
         style="transform: rotate({rotation}deg);"
         in:scale|global={{
-            duration: $animationTime,
-            delay: $animationTime,
+            duration: 300,
+            delay: 300,
             opacity: 0,
             start: 1.2,
         }}
-        out:fade|global={{ duration: $animationTime / 2 }}
+        out:fade|global={{ duration: 300 }}
     >
         {@render children()}
     </div>
@@ -25,7 +25,7 @@
 
 <style lang="scss">
     .board {
-        padding:  var(--padding) var(--largePadding);
+        padding: var(--padding) var(--largePadding);
         background-color: var(--white);
         min-width: clamp(30dvw, 50dvw, calc(500px - var(--largePadding)));
         display: flex;

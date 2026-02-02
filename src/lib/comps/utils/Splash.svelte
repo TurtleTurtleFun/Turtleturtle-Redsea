@@ -12,21 +12,21 @@
         class="splashScreen"
         style="transform: rotate({rotation}deg) translate(0,-50%);"
         in:scale|global={{
-            duration: $animationTime,
-            delay: $animationTime,
+            duration: 300,
+            delay: 300,
             opacity: 0,
             start: 1.5,
         }}
+        out:fade|global={{ duration: 300 }}
     >
         {@render children()}
     </div>
     <div
         class="darkenBackground"
         in:fade|global={{
-            duration: $animationTime,
-            delay: $animationTime,
+            duration: 300,
         }}
-        out:fade|global={{ duration: $animationTime / 2 }}
+        out:fade|global={{ duration: 300 }}
     ></div>
 {/key}
 
